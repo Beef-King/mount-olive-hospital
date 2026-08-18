@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Dashboard — Mount Olive Hospital</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+      <svg class="mark" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" fill="#0D4F4A"/>
+        <path d="M20 10v20M10 20h20" stroke="#E8A233" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      Mount Olive Hospital
+    </a>
+    <button id="logout-btn" class="staff-link">Log Out</button>
+  </div>
+</header>
+
+<div class="dashboard-shell">
+  <div class="container">
+    <div class="dash-header">
+      <div>
+        <p class="eyebrow">Staff Dashboard</p>
+        <h2 class="mt-0">Welcome, <span id="dash-staff-name">Staff</span></h2>
+      </div>
+      <a href="index.html" class="btn btn-outline-dark">← Back to public site</a>
+    </div>
+
+    <div class="form-note">Demo data shown below — this table is static. A real deployment would pull live appointment requests from a database.</div>
+
+    <div class="table-scroll">
+      <table class="dash-table">
+        <thead>
+          <tr>
+            <th>Patient</th>
+            <th>Department</th>
+            <th>Preferred Date</th>
+            <th>Phone</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ememobong Sunday</td>
+            <td>General Outpatient</td>
+            <td>19 Aug 2026</td>
+            <td>0803 XXX XXXX</td>
+            <td><span class="badge badge-pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>Blessing Akpan</td>
+            <td>Maternity &amp; Gynaecology</td>
+            <td>20 Aug 2026</td>
+            <td>0806 XXX XXXX</td>
+            <td><span class="badge badge-confirmed">Confirmed</span></td>
+          </tr>
+          <tr>
+            <td>Daniel Etuk</td>
+            <td>Laboratory</td>
+            <td>21 Aug 2026</td>
+            <td>0701 XXX XXXX</td>
+            <td><span class="badge badge-pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>Grace Ntuk</td>
+            <td>Paediatrics</td>
+            <td>22 Aug 2026</td>
+            <td>0902 XXX XXXX</td>
+            <td><span class="badge badge-confirmed">Confirmed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>© <span id="year"></span> Mount Olive Hospital &amp; Maternity. All rights reserved.</span>
+      <span>Demo site — for review purposes</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
